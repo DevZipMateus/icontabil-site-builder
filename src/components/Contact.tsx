@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import whatsappIcon from "@/assets/whatsapp-icon.png";
 
 const Contact = () => {
   const contactInfo = [
@@ -105,8 +106,9 @@ const Contact = () => {
                     href="https://wa.me/554235232405"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-primary text-primary-foreground px-8 py-3.5 rounded-lg hover:bg-accent transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105 w-full text-center"
+                    className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-3.5 rounded-lg hover:bg-accent transition-all duration-300 font-semibold shadow-lg hover:shadow-xl hover:scale-105 w-full"
                   >
+                    <img src={whatsappIcon} alt="WhatsApp" className="w-6 h-6" />
                     Falar no WhatsApp
                   </a>
                 </CardContent>
